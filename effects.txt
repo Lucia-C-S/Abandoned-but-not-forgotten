@@ -1,0 +1,3 @@
+first a sky of stars, then as the user scrolls down, planets appear and as they get closer they vanish into a specific residue that ill provide as  information in the .txt: 
+
+i also want many user-interface and user-experience layouts and lots of cool things, i want the layout to be very elegant but also wirh that neon-vintage-computer-80s style. but fonts and details as stars and shines and in movement to feel alive
