@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080a09">
+  <meta name="description" content="Guess the missions behind the clues in this NASA-sourced space exploration game.">
+  <title>Mission Games | Abandoned. Not Forgotten.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css"><script src="archive.js" defer></script><script src="games.js" defer></script>
+</head>
+<body>
+  <canvas class="cosmos" id="cosmos" aria-hidden="true"></canvas><div class="scanlines" aria-hidden="true"></div>
+  <header class="site-header"><a class="brand" href="home.html" aria-label="Abandoned. Not Forgotten. home"><span class="brand-mark">A<span>•</span>N</span><span class="brand-name">ABANDONED<span> / NOT FORGOTTEN</span></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button><nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a data-page="home.html" href="home.html">Overview</a><a data-page="moon.html" href="moon.html">The Moon</a><a data-page="mars.html" href="mars.html">Mars</a><a data-page="discoveries.html" href="discoveries.html">Discoveries</a><a data-page="learn.html" href="learn.html">Field guide</a><a class="active" data-page="games.html" href="games.html">Mission games</a><a data-page="effects.html" href="effects.html">Effects lab</a></nav><span class="header-signal"><i></i> SIGNAL CHALLENGE</span></header>
+  <main>
+    <section class="section-wrap section-block games-intro"><div class="section-heading reveal"><div><p class="eyebrow">FIELD TEST / 10 MISSION CLUES</p><h1>Mission <em>mysteries.</em></h1></div><p class="section-aside">Every answer has a source.<br>Every source opens in a new window.</p></div><p class="game-lede">Read each signal, name the explorer, then open its NASA record to follow the trail.</p><div class="game-scoreline"><span id="guess-progress" aria-live="polite">0 / 10 solved</span><span class="score-track"><i id="guess-meter"></i></span><button class="game-reset" id="guess-reset" type="button" title="Reset all cards">Reset cards ↺</button></div></section>
+    <section class="section-wrap game-grid-wrap" aria-label="Mission guessing cards"><div class="guess-grid" id="guess-grid"></div></section>
+    <section class="section-wrap page-next story-handoff"><p class="eyebrow">NEXT / FOLLOW THE AFTERIMAGE</p><h2>From clues and signals<br>to <em>starlight and dust.</em></h2><p>See the Moon and Mars draw near, then disappear into their scattered afterimage.</p><a class="button button-primary" href="effects.html">Enter the Effects Lab <span>→</span></a></section>
+  </main>
+  <footer class="site-footer"><div class="section-wrap footer-bottom"><span>Mission clues are drawn from the NASA source linked on each card.</span><a href="learn.html">BACK TO THE FIELD GUIDE ↑</a></div></footer>
+</body>
+</html>

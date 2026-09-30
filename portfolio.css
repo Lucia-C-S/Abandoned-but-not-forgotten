@@ -804,3 +804,72 @@ h1 em, h2 em { text-shadow: 0 0 8px #b8ff4245, 0 0 24px #b8ff4217; animation: ne
 @media (prefers-reduced-motion: reduce) {
   h1 em, h2 em { animation: none; }
 }
+.journey-intro { grid-column: 1 / -1; max-width: 620px; margin-bottom: 15px; }
+.journey-intro h2 { margin-bottom: 12px; }
+.journey-intro > p:last-child { max-width: 560px; margin: 0; color: #bac3ba; font-size: 18px; line-height: 1.7; }
+.story-handoff { position: relative; display: grid; justify-items: start; gap: 13px; padding-top: 48px; padding-bottom: 67px; border-top: 0; }
+.story-handoff::before { position: absolute; top: 0; right: clamp(22px, 6.4vw, 100px); left: clamp(22px, 6.4vw, 100px); height: 1px; background: linear-gradient(90deg, var(--green), #b8ff4220 72%, transparent); content: ""; }
+.story-handoff h2 { max-width: 760px; font-size: clamp(28px, 4vw, 47px); }
+.story-handoff > p:not(.eyebrow) { max-width: 710px; margin: 0; color: #b7c0b7; font-size: 18px; line-height: 1.7; }
+.story-handoff .button { margin-top: 7px; }
+.effects-handoff { margin-top: 18px; border-bottom: 1px solid var(--line); }
+.thread-links { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 6px; }
+.thread-links a { display: inline-flex; align-items: center; gap: 9px; min-height: 40px; color: #dce3dc; font: 11px var(--mono); text-decoration: none; }
+.thread-links a span { color: var(--green); transition: transform .2s; }
+.thread-links a:hover { color: var(--green); }
+.thread-links a:hover span { transform: translate(3px, -3px); }
+@media (max-width: 600px) {
+  .journey-intro > p:last-child, .story-handoff > p:not(.eyebrow) { font-size: 18px; }
+  .story-handoff { padding-top: 35px; padding-bottom: 48px; }
+  .thread-links { align-items: start; flex-direction: column; gap: 4px; }
+}
+
+.games-intro { padding-bottom: 31px; }
+.games-intro .section-heading { margin-bottom: 18px; }
+.game-lede { max-width: 780px; margin: 0 0 24px; color: #c1c9c1; font-size: 18px; line-height: 1.7; }
+.game-scoreline { display: flex; align-items: center; gap: 15px; color: var(--green); font: 10px var(--mono); }
+.score-track { position: relative; flex: 1; height: 4px; overflow: hidden; background: #2b332c; }
+.score-track i { display: block; width: 0; height: 100%; background: var(--green); box-shadow: 0 0 12px var(--green); transition: width .55s cubic-bezier(.16,1,.3,1); }
+.game-reset { min-height: 37px; padding: 0 11px; border: 1px solid #475247; background: #0d120e; color: #d2d9d2; cursor: pointer; font: 9px var(--mono); transition: border-color .2s, color .2s; }
+.game-reset:hover { border-color: var(--green); color: var(--green); }
+.game-grid-wrap { padding-bottom: 85px; }
+.guess-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.guess-card { --game-green: #b8ff42; position: relative; display: flex; min-width: 0; flex-direction: column; padding: 18px; border: 1px solid #384238; background: linear-gradient(145deg, #111612, #0a0d0b 72%); opacity: 0; animation: card-arrive .65s cubic-bezier(.16,1,.3,1) forwards; animation-delay: calc(var(--card-order) * 55ms); transition: transform .25s, border-color .25s, box-shadow .25s; }
+.guess-card::before { position: absolute; top: -1px; right: 18px; left: 18px; height: 1px; background: linear-gradient(90deg, transparent, #d7ffd048, transparent); content: ""; }
+.guess-card:hover { transform: translateY(-4px); border-color: #677d54; box-shadow: 0 12px 28px #0005, 0 0 28px #b8ff4209; }
+.guess-card.is-correct { border-color: #95d947; box-shadow: inset 0 0 32px #b8ff420d, 0 0 22px #b8ff4217; }
+.guess-card.is-missed { border-color: #c79054; }
+.guess-card-top { display: flex; min-height: 25px; justify-content: space-between; gap: 10px; color: var(--green); font: 8px var(--mono); letter-spacing: .04em; }
+.guess-card-top span:last-child { color: #a1aca0; text-align: right; }
+.guess-clue { flex: 1; min-height: 121px; margin: 18px 0 17px; color: #e4e9e4; font: 500 17px/1.55 var(--sans); }
+.guess-options { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+.guess-option { min-height: 42px; padding: 8px 9px; border: 1px solid #39433a; background: #0b100c; color: #c8d0c8; cursor: pointer; font: 10px/1.35 var(--mono); text-align: left; transition: border-color .2s, background .2s, color .2s, transform .2s; }
+.guess-option:hover:not(:disabled) { transform: translateY(-2px); border-color: var(--green); color: #f1f5ef; }
+.guess-option:disabled { cursor: default; }
+.guess-option.is-answer { border-color: #9ada45; background: #1a2613; color: #caff83; box-shadow: inset 0 0 18px #b8ff4210; }
+.guess-option.is-incorrect { border-color: #bd8050; background: #24180f; color: #ffc18d; }
+.guess-feedback { min-height: 91px; margin: 13px 0 10px; padding: 11px 12px; border-left: 2px solid #53604f; background: #0c100d; color: #b7c0b7; font-size: 13px; line-height: 1.6; }
+.guess-card.is-correct .guess-feedback { border-color: var(--green); color: #d9e6ce; }
+.guess-card.is-missed .guess-feedback { border-color: #d89658; color: #d8c3ad; }
+.guess-source { display: inline-flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: auto; padding-top: 10px; border-top: 1px solid #2b332c; color: #aab6a8; font: 9px var(--mono); text-decoration: none; }
+.guess-source span { color: var(--green); }
+.guess-source:hover { color: var(--green); }
+@keyframes card-arrive { from { opacity: 0; transform: translateY(20px) scale(.985); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (max-width: 1000px) {
+  .guess-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .games-intro { padding-bottom: 24px; }
+  .game-scoreline { flex-wrap: wrap; gap: 11px; }
+  .score-track { order: 3; flex-basis: 100%; }
+  .game-reset { margin-left: auto; }
+  .guess-grid { grid-template-columns: 1fr; gap: 11px; }
+  .guess-card { padding: 16px; }
+  .guess-clue { min-height: 0; font-size: 18px; }
+  .guess-feedback { min-height: 70px; font-size: 14px; }
+  .guess-option { min-height: 46px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .guess-card { opacity: 1; animation: none; }
+  .guess-card, .guess-option, .score-track i { transition: none; }
+}

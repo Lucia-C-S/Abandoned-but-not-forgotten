@@ -1,182 +1,182 @@
 const timeline = [
-  ["1966", "Surveyor 1", "First American soft landing on the Moon (June 2)."],
-  ["1967", "Surveyor 3", "A robot lander arrives at the Ocean of Storms (April 20)."],
-  ["1969", "Apollo 11", "First humans on the Moon (July 20). They leave a laser mirror behind."],
-  ["1969", "Apollo 12", "Astronauts walk to Surveyor 3 and bring parts of it home (November)."],
-  ["1971", "Moon buggy", "First rover with people aboard drives on the Moon (Apollo 15, July)."],
-  ["1972", "Apollo 17", "The last humans to walk on the Moon (December)."],
-  ["1976", "Viking landers", "Viking 1 (July 20) and Viking 2 (September 3) touch down on Mars."],
-  ["1977", "Lights out on the Moon", "NASA switches off the Apollo science stations (September 30)."],
-  ["1997", "Sojourner", "The first rover on Mars (Pathfinder landed July 4)."],
-  ["2004", "Spirit and Opportunity", "Twin rovers land in January and are built for 90 days."],
-  ["2008", "Phoenix", "A lander digs up Martian ice (landed May 25)."],
-  ["2009", "LRO and LCROSS", "A Moon-mapping orbiter launches (June 18). LCROSS hits a crater to look for water (October 9)."],
-  ["2012", "Curiosity", "Lowered onto Mars by a rocket-powered \"sky crane\" (August). GRAIL's twin probes end their mission on the Moon (December 17)."],
-  ["2018", "InSight", "A Mars lander with a seismometer arrives (November 26). Opportunity goes silent in a dust storm (June 10)."],
-  ["2019", "Opportunity", "Declared complete (February 13)."],
-  ["2021", "Perseverance and Ingenuity", "Land on Mars (February 18). The helicopter's first flight is on April 19."],
-  ["2022", "InSight", "Mission ends (December 21)."],
-  ["2024", "Ingenuity", "Retired after 72 flights (January 25)."],
-  ["2026", "Artemis II", "Astronauts fly around the Moon and return safely (April 1–10). Curiosity and Perseverance are still exploring Mars."]
+  ["1966", "Surveyor 1", "On June 2, America's first soft landing on the Moon leaves a quiet machine behind."],
+  ["1967", "Surveyor 3", "On April 20, a small robot settles into the Ocean of Storms."],
+  ["1969", "Apollo 11", "On July 20, the first people walk on the Moon and leave a mirror to answer lasers."],
+  ["1969", "Apollo 12", "In November, astronauts visit Surveyor 3 and carry pieces of it home."],
+  ["1971", "Moon buggy", "In July, Apollo 15 astronauts drive the first crewed rover across the Moon."],
+  ["1972", "Apollo 17", "In December, the last humans to walk on the Moon head home."],
+  ["1976", "Viking landers", "Viking 1 arrives July 20; Viking 2 follows on September 3."],
+  ["1977", "Lights out on the Moon", "On September 30, NASA sends its Apollo science stations their final command."],
+  ["1997", "Sojourner", "Pathfinder lands July 4, carrying the first rover to roll across Mars."],
+  ["2004", "Spirit and Opportunity", "Twin rovers arrive in January, each built for a 90-day journey."],
+  ["2008", "Phoenix", "On May 25, a lander reaches the Martian north and uncovers ice."],
+  ["2009", "LRO and LCROSS", "LRO begins mapping the Moon June 18. On October 9, LCROSS strikes a crater in search of water."],
+  ["2012", "Curiosity", "In August, a rocket-powered \"sky crane\" lowers Curiosity to Mars. GRAIL's twin probes finish their lunar mission December 17."],
+  ["2018", "InSight", "InSight arrives November 26 to listen for marsquakes. Opportunity falls silent in a dust storm on June 10."],
+  ["2019", "Opportunity", "On February 13, NASA declares the long-running rover's mission complete."],
+  ["2021", "Perseverance and Ingenuity", "Both arrive February 18. Ingenuity makes its first flight April 19."],
+  ["2022", "InSight", "On December 21, the lander's listening mission comes to an end."],
+  ["2024", "Ingenuity", "After 72 flights, the little helicopter is retired January 25."],
+  ["2026", "Artemis II", "From April 1–10, astronauts circle the Moon and return safely. Curiosity and Perseverance are still exploring Mars."]
 ];
 
 const stories = [
   {
-    id: "moon-story-1", world: "moon", status: "Mission complete", years: "1969–1972", where: "Six sites on the near side of the Moon", title: "Six parking lots on the Moon",
-    teaser: "The bottom part stayed behind and became a launch pad.",
-    story: ["Each Apollo Lunar Module had two parts. The bottom part, the descent stage, had the legs and the landing engine. When the astronauts were ready to leave, the top part, the ascent stage, blasted off and carried them back to lunar orbit. The bottom part stayed behind and became a launch pad. It is still there at all six landing sites, along with tools, cameras and other gear."],
-    science: "Studying these sites showed scientists how landing engines disturb lunar soil and how long footprints and wheel tracks can last.",
-    didYouKnow: "Orbiting cameras can photograph the descent stages, the rover tracks and even the astronauts' footpaths from far above.", alt: "Apollo Lunar Module descent stage at a lunar landing site"
+    id: "moon-story-1", world: "moon", status: "Mission complete", years: "1969–1972", where: "Six sites on the near side of the Moon", title: "Six launchpads beneath the stars",
+    teaser: "The descent stages stayed behind, still standing at all six landing sites.",
+    story: ["Every Apollo Lunar Module arrived in two pieces. Its lower half, the descent stage, held the landing engine and four sturdy legs. When it was time to go, the upper half lifted the astronauts back to lunar orbit. The lower half remained where it landed, a launchpad for a journey home. All six are still there, beside scattered tools, cameras and other gear."],
+    science: "At these sites, scientists can see how a landing engine stirs lunar soil, and how patiently footprints and wheel tracks endure.",
+    didYouKnow: "From orbit, cameras can still trace the landers, rover tracks and even the astronauts' old footpaths.", alt: "Apollo Lunar Module descent stage at a lunar landing site"
   },
   {
-    id: "moon-story-2", world: "moon", status: "Mission complete", years: "1971–1972", where: "Apollo 15, 16 and 17 landing sites", title: "Three Moon buggies with no keys",
-    teaser: "The three rovers together drove roughly 90 km on the Moon.",
-    story: ["The Lunar Roving Vehicle was an electric car for two astronauts. It folded up like a picnic table and was carried on the side of the lander. It was designed for about 13 km/h (8 mph), and the three rovers together drove roughly 90 km on the Moon. Then the astronauts drove them a short distance away, parked them and flew home. On Apollo 17, a fender broke. The astronauts fixed it with duct tape and some maps, and it worked."],
-    science: "The rovers let crews collect rocks far from the lander, including samples that helped date the Moon.",
-    didYouKnow: "The batteries were not rechargeable, so once they ran out the rovers could never be used again.", alt: "Lunar Roving Vehicle parked on the Moon"
+    id: "moon-story-2", world: "moon", status: "Mission complete", years: "1971–1972", where: "Apollo 15, 16 and 17 landing sites", title: "Three electric buggies, parked",
+    teaser: "Together, the three rovers travelled roughly 90 km across the Moon.",
+    story: ["The Lunar Roving Vehicle carried two astronauts over ground their boots could never reach. Folded like a picnic table, it rode on the side of the lander. It was designed to travel about 13 km/h (8 mph); all three rovers covered roughly 90 km together. At each mission's end, the crew parked its buggy nearby and flew home. On Apollo 17, a broken fender was patched with duct tape and maps. The fix held."],
+    science: "The buggies carried crews farther from the lander, where they gathered rocks that helped scientists work out the Moon's age.",
+    didYouKnow: "Their batteries could not be recharged. When the power ran out, each buggy's driving days were over.", alt: "Lunar Roving Vehicle parked on the Moon"
   },
   {
     id: "moon-story-3", world: "moon", status: "Still working", years: "1969–today", where: "Apollo 11, 14 and 15 sites", title: "The mirrors that still answer",
-    teaser: "Scientists on Earth fire a laser beam at one, and the mirror bounces the light straight back.",
-    story: ["The Apollo 11, 14 and 15 crews left special mirrors on the Moon called retroreflectors. They have no power and no moving parts. Scientists on Earth fire a laser beam at one, and the mirror bounces the light straight back. By timing the trip, they can measure the distance to the Moon very precisely. More than fifty years later, observatories still do this. The mirrors have faded a little over the years, but they still work."],
-    science: "These measurements showed that the Moon is slowly drifting away from Earth, about 3.8 cm (1.5 inches) a year, and they have been used to test Einstein's theory of gravity.",
-    didYouKnow: "Laser light takes about two and a half seconds to make the round trip to the Moon and back.", alt: "Laser retroreflector left on the lunar surface"
+    teaser: "A beam leaves Earth, touches a mirror, and comes home with the Moon's distance inside it.",
+    story: ["Apollo 11, 14 and 15 left small mirrors called retroreflectors on the Moon. They need no power and have no moving parts. From Earth, scientists send a laser pulse toward one; the mirror returns the light along its path. By timing that round trip, they measure the Moon's distance with great precision. More than fifty years later, observatories still listen for the returning light. The mirrors have faded a little, but they still answer."],
+    science: "Those measurements show the Moon drifting away from Earth by about 3.8 cm (1.5 inches) each year. They have also helped test Einstein's theory of gravity.",
+    didYouKnow: "A laser pulse makes its round trip to the Moon in about two and a half seconds.", alt: "Laser retroreflector left on the lunar surface"
   },
   {
     id: "moon-story-4", world: "moon", status: "Mission complete", years: "1969–1977", where: "Apollo 12, 14, 15, 16 and 17 sites (Apollo 11 left a smaller set)", title: "The day NASA turned off the Moon",
-    teaser: "Small nuclear power units kept them running through the long, freezing lunar nights.",
-    story: ["Apollo crews set up small science stations called ALSEPs (Apollo Lunar Surface Experiments Packages). Each had instruments such as seismometers, which feel shaking, and it sent its data to Earth for years. Small nuclear power units kept them running through the long, freezing lunar nights. On September 30, 1977, NASA sent the command to shut them down, mostly to save money. The stations have been silent ever since."],
-    science: "The seismometers recorded thousands of moonquakes, and they revealed that the Moon has layers: a crust, a mantle and a small core.",
-    didYouKnow: "Heat probes at two landing sites measured how much warmth flows out of the Moon's interior.", alt: "Apollo Lunar Surface Experiments Package science station"
+    teaser: "For years, small stations sent the Moon's tremors and warmth back to Earth.",
+    story: ["Apollo crews left behind small science stations called ALSEPs. Their instruments included seismometers, which felt the ground tremble, and sent readings to Earth for years. Small nuclear power units carried them through the Moon's long, freezing nights. On September 30, 1977, NASA sent a final shut-down command, mostly to save money. Since then, the stations have kept their silence."],
+    science: "Their seismometers recorded thousands of moonquakes and revealed a layered Moon: crust, mantle and a small core.",
+    didYouKnow: "At two landing sites, heat probes measured warmth rising from the Moon's interior.", alt: "Apollo Lunar Surface Experiments Package science station"
   },
   {
     id: "moon-story-5", world: "moon", status: "Mission complete", years: "1967–1969", where: "Ocean of Storms", title: "The robot that got a visit",
-    teaser: "Apollo 12 astronauts landed about 180 metres (600 feet) away, on purpose.",
-    story: ["Surveyor 3 was a robot lander that reached the Moon in April 1967. Two and a half years later, Apollo 12 astronauts Pete Conrad and Alan Bean landed about 180 metres (600 feet) away, on purpose. They walked over, cut off pieces such as its camera, and brought them back to Earth."],
-    science: "Engineers could finally study how metal, wires and glass behave after years on the Moon. The visit also proved a spacecraft could land precisely where planners aimed.",
-    didYouKnow: "Surveyor 3 is the only spacecraft on the Moon that has been visited by people.", alt: "Surveyor 3 robot lander in the Ocean of Storms"
+    teaser: "Two and a half years after Surveyor landed, astronauts came back to see it.",
+    story: ["Surveyor 3 touched down in the Moon's Ocean of Storms in April 1967. Two and a half years later, Pete Conrad and Alan Bean guided Apollo 12 to a landing about 180 metres (600 feet) away. They walked over, removed pieces of the little robot, including its camera, and carried them home."],
+    science: "Back on Earth, engineers could study how metal, wires and glass weathered on the Moon. The visit also proved a spacecraft could land almost exactly where its planners aimed.",
+    didYouKnow: "Surveyor 3 is the only spacecraft on the Moon that people have visited.", alt: "Surveyor 3 robot lander in the Ocean of Storms"
   },
   {
-    id: "moon-story-6", world: "moon", status: "Crashed on purpose", years: "1969–2014", where: "Many places on the Moon", title: "Ending with a bang, for science",
-    teaser: "Sometimes the last chapter is a planned crash.",
-    story: ["Ending a mission on the Moon does not always mean going quiet. Sometimes the last chapter is a planned crash. After Apollo 12–17 crews left, their ascent stages were steered into the Moon so seismometers could record the impact and reveal what lay underground. In 2009, the LCROSS probe and its spent rocket stage hit a crater near the Moon's south pole so telescopes could look at the debris for water. In 2012, the twin GRAIL probes, Ebb and Flow, finished mapping the Moon's gravity and were guided into a mountain near its north pole."],
-    science: "The LCROSS plume showed water ice hiding in permanently shadowed craters. GRAIL produced the most detailed gravity map of the Moon yet.",
-    didYouKnow: "GRAIL carried cameras that let students choose photo targets. The crash site was later named for astronaut Sally Ride.", alt: "Lunar spacecraft impact site studied for science"
+    id: "moon-story-6", world: "moon", status: "Crashed on purpose", years: "1969–2014", where: "Many places on the Moon", title: "A final experiment, written in impact",
+    teaser: "Some missions end not with silence, but with one last question for the ground.",
+    story: ["On the Moon, a mission's final act can be an impact. After Apollo 12–17, crews steered their ascent stages into the surface so seismometers could feel the shock and reveal what lay below. In 2009, LCROSS and its spent rocket stage struck a crater near the south pole; telescopes watched the plume for signs of water. In 2012, after mapping lunar gravity, GRAIL's twin probes Ebb and Flow were guided into a mountain near the north pole."],
+    science: "LCROSS revealed water ice in permanently shadowed craters. GRAIL left behind the most detailed map of the Moon's gravity yet.",
+    didYouKnow: "Students chose targets for GRAIL's cameras. Its final impact site was later named for astronaut Sally Ride.", alt: "Lunar spacecraft impact site studied for science"
   },
   {
-    id: "moon-story-7", world: "moon", status: "Mission complete", years: "1969–1972", where: "Apollo sites", title: "Small things left behind",
-    teaser: "Besides big machines, Apollo crews left small things that tell a human story.",
-    story: ["Besides big machines, Apollo crews left small things that tell a human story.", "<ul><li><strong>Flags.</strong> Each of the six crews planted a U.S. flag. Orbiting cameras have photographed the shadows of flags still standing at most of the sites.</li><li><strong>The hammer and the feather.</strong> Apollo 15's commander, David Scott, dropped a hammer and a feather together in the airless Moon. They landed at the same moment. He left both behind.</li><li><strong>Golf balls.</strong> Apollo 14's Alan Shepard hit two golf balls using a club rigged from a tool handle.</li><li><strong>A tiny memorial.</strong> Apollo 15 left a small figure called <em>Fallen Astronaut</em> to honor people who died exploring space.</li><li><strong>A message disc.</strong> Apollo 11 left a small silicon disc carrying goodwill messages from leaders of 73 countries.</li></ul>"],
-    science: "The hammer and feather gave a live test of an idea from Galileo: without air, all objects fall at the same rate.",
-    didYouKnow: "Apollo crews also left about 96 bags of human waste. Some scientists would like to study them.", alt: "Apollo-era artifacts and astronaut footprints on the Moon"
+    id: "moon-story-7", world: "moon", status: "Mission complete", years: "1969–1972", where: "Apollo sites", title: "Small keepsakes from Apollo",
+    teaser: "A flag, a feather, a pair of golf balls: the Moon holds stories both large and small.",
+    story: ["Beyond the great machines, Apollo crews left small traces of the people who travelled there.", "<ul><li><strong>Flags.</strong> Each of the six crews planted a U.S. flag. Orbiting cameras have photographed the shadows of flags still standing at most of the sites.</li><li><strong>The hammer and the feather.</strong> Apollo 15 commander David Scott dropped a hammer and a feather together in the airless Moon. They landed at the same moment. He left both behind.</li><li><strong>Golf balls.</strong> Apollo 14's Alan Shepard hit two golf balls with a club made from a tool handle.</li><li><strong>A tiny memorial.</strong> Apollo 15 left a small figure called <em>Fallen Astronaut</em>, honoring people who died exploring space.</li><li><strong>A message disc.</strong> Apollo 11 left a small silicon disc carrying goodwill messages from leaders of 73 countries.</li></ul>"],
+    science: "Scott's hammer-and-feather drop brought Galileo's idea to the lunar surface: without air, objects fall at the same rate.",
+    didYouKnow: "The crews also left about 96 bags of human waste. Some scientists hope to study them one day.", alt: "Apollo-era artifacts and astronaut footprints on the Moon"
   },
   {
-    id: "moon-story-8", world: "moon", status: "Still working", years: "2009–today", where: "In orbit around the Moon", title: "The camera that photographs the old hardware",
-    teaser: "Its camera can see objects on the ground as small as a car.",
-    story: ["The Lunar Reconnaissance Orbiter (LRO) launched in June 2009 and was meant to work for about a year. It has kept going far longer. Its camera can see objects on the ground as small as a car, which is enough to spot old landers, rover tracks and even the paths astronauts walked. It also mapped the Moon in fine detail for future missions."],
-    science: "LRO's maps and photos are used to plan where the next crews and robots will land, and to track how the old sites are changing.",
-    didYouKnow: "An instrument on LRO helped find cold, dark craters where water ice may be hiding.", alt: "Lunar Reconnaissance Orbiter mapping the Moon"
+    id: "moon-story-8", world: "moon", status: "Still working", years: "2009–today", where: "In orbit around the Moon", title: "A camera keeping watch",
+    teaser: "From orbit, LRO can pick out a lander, a rover track, even a path across the dust.",
+    story: ["The Lunar Reconnaissance Orbiter (LRO) left Earth in June 2009 for a mission planned to last about a year. It kept going. From orbit, its camera can spot objects as small as a car: old landers, rover tracks and the paths astronauts walked. Its detailed maps also help prepare the way for future missions."],
+    science: "LRO's maps and images help choose landing sites for future crews and robots, while keeping an eye on the old Apollo sites.",
+    didYouKnow: "One of LRO's instruments helped reveal cold, shadowed craters where water ice may be hiding.", alt: "Lunar Reconnaissance Orbiter mapping the Moon"
   },
   {
-    id: "mars-story-1", world: "mars", status: "Mission complete", years: "1976–1982", where: "Chryse Planitia (Viking 1) and Utopia Planitia (Viking 2)", title: "The first postcards from the surface",
-    teaser: "Viking 1 touched down on July 20, 1976, exactly seven years after Apollo 11 landed on the Moon.",
-    story: ["The two Viking landers were the first American spacecraft to work on the surface of Mars. Viking 1 touched down on July 20, 1976, exactly seven years after Apollo 11 landed on the Moon. Each lander carried a camera, a weather station and a tiny chemistry lab built to look for signs of life. Viking 2 worked until 1980, and Viking 1 kept going until late 1982."],
-    science: "Viking showed that Mars is a cold, dusty desert with a pinkish-orange sky. Its life-detection tests gave puzzling results that most scientists read as \"no life found.\" That question is still studied today.",
-    didYouKnow: "Viking 1 sent back weather reports for more than six years, which helped scientists see how Mars' seasons work.", alt: "Viking lander on the surface of Mars"
+    id: "mars-story-1", world: "mars", status: "Mission complete", years: "1976–1982", where: "Chryse Planitia (Viking 1) and Utopia Planitia (Viking 2)", title: "The first postcards from Mars",
+    teaser: "Viking 1 arrived on the seventh anniversary of Apollo 11's first steps on the Moon.",
+    story: ["In 1976, two Viking landers became the first American spacecraft to work on Mars. Viking 1 touched down on July 20, exactly seven years after Apollo 11 landed on the Moon. Each carried a camera, a weather station and a tiny chemistry lab built to search for signs of life. Viking 2 worked until 1980; Viking 1 kept sending signals until late 1982."],
+    science: "Viking revealed a cold, dusty world beneath a pink-orange sky. Its life tests returned puzzling results; most scientists read them as \"no life found.\" The question is still being studied.",
+    didYouKnow: "For more than six years, Viking 1 sent home weather reports that helped scientists follow Mars' seasons.", alt: "Viking lander on the surface of Mars"
   },
   {
-    id: "mars-story-2", world: "mars", status: "Mission complete", years: "1997", where: "Ares Vallis, Mars", title: "The microwave-oven-sized pioneer",
-    teaser: "It was designed to work for one week. It worked for about 83 days.",
-    story: ["Sojourner was the first rover to drive on Mars. It was about the size of a microwave oven and rode inside the Pathfinder lander, which reached Mars on July 4, 1997, by bouncing to a stop inside giant airbags. It was designed to work for one week. It worked for about 83 days and drove only about 100 metres (330 feet). Pathfinder's last signal came on September 27, 1997."],
-    science: "Sojourner used a tool called a spectrometer to identify the chemistry of rocks, including two named Barnacle Bill and Yogi. It proved that small, cheap rovers could work on Mars.",
-    didYouKnow: "Every rover since Sojourner has followed its example.", alt: "Sojourner rover beside a Martian rock"
+    id: "mars-story-2", world: "mars", status: "Mission complete", years: "1997", where: "Ares Vallis, Mars", title: "Sojourner's first small steps",
+    teaser: "Built for a week, the microwave-sized rover explored for about 83 days.",
+    story: ["Sojourner was the first rover to drive on Mars, no bigger than a microwave oven. It rode inside Pathfinder, which reached Mars on July 4, 1997, bouncing to a stop inside giant airbags. The rover was meant to last one week; it worked for about 83 days and travelled roughly 100 metres (330 feet). Pathfinder's final signal reached Earth on September 27, 1997."],
+    science: "With a spectrometer, Sojourner read the chemistry of rocks, including two nicknamed Barnacle Bill and Yogi. It showed that small, lower-cost rovers could explore Mars.",
+    didYouKnow: "Every Mars rover that followed began with a path Sojourner helped open.", alt: "Sojourner rover beside a Martian rock"
   },
   {
     id: "mars-story-3", world: "mars", status: "Mission complete", years: "2004–2010", where: "Gusev Crater, Mars", title: "The rover that got stuck and kept going",
-    teaser: "Spirit became a fixed science station after getting stuck in soft sand.",
-    story: ["Spirit landed on January 4, 2004, and was built to last about 90 days. It worked for about six years. In 2009, its wheels broke through a crust of soft sand and it got stuck. Engineers tried for months to free it and could not. Spirit became a fixed science station. Winter came, the sun's angle dropped, and its last message reached Earth on March 22, 2010."],
-    science: "Spirit dragged a damaged wheel through the soil and uncovered bright, silica-rich material. On Earth, this kind of material forms around hot springs, a hint that ancient Mars had warm, wet places.",
-    didYouKnow: "Dust-devil winds sometimes cleaned Spirit's solar panels and gave it extra power.", alt: "Spirit rover exploring Gusev Crater on Mars"
+    teaser: "When its wheels caught in soft sand, Spirit kept working as a science station.",
+    story: ["Spirit arrived at Gusev Crater on January 4, 2004, built for about 90 days. It lasted nearly six years. In 2009, its wheels sank through a crust of soft sand. Engineers tried for months to free it, then Spirit stayed where it was and kept studying. Winter lowered the Sun and its power faded. Its last message reached Earth on March 22, 2010."],
+    science: "A damaged wheel dragged through the soil and uncovered bright, silica-rich material. On Earth, similar deposits form around hot springs, hinting that ancient Mars once held warm, wet places.",
+    didYouKnow: "Now and then, dust-devil winds swept Spirit's solar panels clean and gave the rover a little more power.", alt: "Spirit rover exploring Gusev Crater on Mars"
   },
   {
     id: "mars-story-4", world: "mars", status: "Mission complete", years: "2004–2019", where: "Meridiani Planum, Mars", title: "The 90-day rover that ran for 14 years",
-    teaser: "Opportunity drove about 45 km (28 miles), more than a marathon.",
-    story: ["Opportunity landed on January 25, 2004, planned for 90 sols (Mars days). It kept going for about 14 years and drove about 45 km (28 miles), more than a marathon. In 2018, a huge dust storm covered Mars and blocked the sunlight that powered the rover. Its last message came on June 10, 2018. After many attempts to reach it, NASA declared the mission complete on February 13, 2019."],
-    science: "Opportunity found tiny round pebbles of hematite, nicknamed \"blueberries,\" and layered rocks shaped by salty water. It was strong evidence that liquid water once soaked this region.",
-    didYouKnow: "The mission set a record for the longest distance driven on another world by any rover, at least until other rovers challenged it.", alt: "Opportunity rover tracks across the Martian surface"
+    teaser: "A 90-day mission became a 14-year journey of roughly 45 km (28 miles).",
+    story: ["Opportunity landed on January 25, 2004, with a plan to work for 90 sols, or Mars days. It kept going for about 14 years, driving roughly 45 km (28 miles), farther than a marathon. In 2018, a vast dust storm hid the Sun and starved the rover's solar panels of light. Its last message came June 10. After many attempts to reach it, NASA closed the mission on February 13, 2019."],
+    science: "Opportunity found tiny hematite pebbles nicknamed \"blueberries\" and layers of rock shaped by salty water: strong evidence that liquid water once soaked this region.",
+    didYouKnow: "Opportunity set the record for the longest rover drive on another world, until later explorers began to challenge it.", alt: "Opportunity rover tracks across the Martian surface"
   },
   {
     id: "mars-story-5", world: "mars", status: "Mission complete", years: "2008", where: "Northern plains near the Martian north pole", title: "The lander that touched Martian ice",
-    teaser: "Its robotic arm dug a shallow trench and uncovered bright chunks that vanished a few days later.",
-    story: ["Phoenix landed on May 25, 2008, near the north pole. It could not roam, but it had a robotic arm. The arm dug a shallow trench and uncovered bright chunks that vanished a few days later. They were water ice, evaporating in the thin air. Phoenix was designed for a short summer mission. As the Martian arctic grew colder and darker, its solar panels could no longer keep it alive. Its last signal came on November 2, 2008."],
-    science: "Phoenix confirmed that there is water ice just under the soil in the Martian arctic. It also found salts in the soil and watched snow fall from clouds.",
-    didYouKnow: "Phoenix carried a tiny lab that \"cooked\" soil samples to see what they were made of.", alt: "Phoenix lander trench revealing water ice on Mars"
+    teaser: "Phoenix scratched the soil and found bright ice that slowly vanished in the thin air.",
+    story: ["Phoenix settled near Mars' north pole on May 25, 2008. It could not roam, but its robotic arm could reach into the soil. In one shallow trench, it uncovered bright pieces that faded away over a few days: water ice evaporating into the thin air. Phoenix was built for a short summer. As the season darkened and cooled, its solar panels could no longer keep it awake. Its final signal came November 2, 2008."],
+    science: "Phoenix confirmed water ice just beneath the Martian arctic soil. It also found salts and watched snow fall from clouds.",
+    didYouKnow: "A tiny lab aboard Phoenix heated soil samples to learn what they were made of.", alt: "Phoenix lander trench revealing water ice on Mars"
   },
   {
     id: "mars-story-6", world: "mars", status: "Mission complete", years: "2018–2022", where: "Elysium Planitia, Mars", title: "The lander that listened to Mars",
-    teaser: "It recorded more than 1,300 marsquakes and even the impacts of falling meteoroids.",
-    story: ["InSight landed on November 26, 2018, and set a seismometer directly on the ground. It was Mars' first \"stethoscope.\" It recorded more than 1,300 marsquakes and even the impacts of falling meteoroids. Over time, dust settled on its solar panels, its power dropped, and NASA ended the mission on December 21, 2022."],
-    science: "InSight's data revealed the thickness of Mars' crust, showed that its core is liquid, and measured how big the core is.",
-    didYouKnow: "Wind was a problem for the seismometer, so the team covered it with a small dome to shield it.", alt: "InSight lander and its seismometer on Mars"
+    teaser: "For years, InSight listened as Mars trembled beneath its quiet sky.",
+    story: ["InSight arrived November 26, 2018, and placed a seismometer directly on the ground, a kind of stethoscope for Mars. It recorded more than 1,300 marsquakes and the impacts of falling meteoroids. Dust slowly settled across its solar panels and its power dwindled. NASA closed the mission on December 21, 2022."],
+    science: "InSight's readings revealed the thickness of Mars' crust, showed that its core is liquid and measured its size.",
+    didYouKnow: "A small dome shielded the seismometer from the wind that crossed the landing site.", alt: "InSight lander and its seismometer on Mars"
   },
   {
     id: "mars-story-7", world: "mars", status: "Mission complete", years: "2021–2024", where: "Jezero Crater, Mars", title: "The helicopter that flew 72 times",
-    teaser: "It made the first powered, controlled flight on another planet.",
-    story: ["Ingenuity hitched a ride under Perseverance and was supposed to make five flights. On April 19, 2021, it made the first powered, controlled flight on another planet, hovering about 3 metres (10 feet) up for 39 seconds. It flew 72 times in total. On January 18, 2024, it damaged its rotor blades on landing, and NASA retired it on January 25, 2024. It is now parked in Jezero Crater."],
-    science: "Ingenuity proved that flying on Mars is possible, even though the air is very thin. Future missions may include flying scouts.",
-    didYouKnow: "A tiny piece of fabric from the Wright brothers' first airplane rode with Ingenuity. A student named it in NASA's naming contest.", alt: "Ingenuity helicopter resting on the Martian surface"
+    teaser: "Five test flights became 72, and Mars briefly had a helicopter in its sky.",
+    story: ["Ingenuity rode beneath Perseverance, expected to make just five flights. On April 19, 2021, it lifted about 3 metres (10 feet) above Mars for 39 seconds: the first powered, controlled flight on another planet. It flew 72 times. A hard landing on January 18, 2024, damaged its rotor blades, and NASA retired it on January 25. Ingenuity now rests in Jezero Crater."],
+    science: "Ingenuity showed that flight is possible in Mars' very thin air. Future missions may send flying scouts ahead.",
+    didYouKnow: "A tiny piece of fabric from the Wright brothers' first airplane travelled with Ingenuity. A student chose the helicopter's name in a NASA contest.", alt: "Ingenuity helicopter resting on the Martian surface"
   },
   {
     id: "mars-story-8", world: "mars", status: "Still working", years: "2012–today", where: "Gale Crater, Mars", title: "Still driving, more than a decade later",
-    teaser: "It now climbs Mount Sharp, a tall mountain of layered rock in the middle of Gale Crater.",
-    story: ["Curiosity is as big as a small car. It landed in August 2012, lowered from a rocket-powered \"sky crane.\" It now climbs Mount Sharp, a tall mountain of layered rock in the middle of Gale Crater. The layers are like pages of a history book, with each one recording a different time on Mars. It keeps driving and drilling, even with a worn and cracked wheel."],
-    science: "Curiosity showed that Gale Crater once held a lake with the right ingredients for microbial life to live, and it also found organic molecules in ancient rock.",
-    didYouKnow: "A 12-year-old student named Curiosity in a NASA contest.", alt: "Curiosity rover on Mount Sharp in Gale Crater"
+    teaser: "Curiosity is still climbing Mount Sharp, reading Mars one rock layer at a time.",
+    story: ["Curiosity is about the size of a small car. In August 2012, a rocket-powered \"sky crane\" lowered it onto Mars. Today it climbs Mount Sharp, a tall stack of rock in Gale Crater. Each layer holds a page from a different chapter of Martian history. The rover keeps driving and drilling, even with a worn, cracked wheel."],
+    science: "Curiosity found that Gale Crater once held a lake with ingredients that could support microbial life. It also found organic molecules in ancient rock.",
+    didYouKnow: "A 12-year-old student gave Curiosity its name in a NASA contest.", alt: "Curiosity rover on Mount Sharp in Gale Crater"
   },
   {
     id: "mars-story-9", world: "mars", status: "Still working", years: "2021–today", where: "Jezero Crater, Mars", title: "The rover collecting samples for the future",
-    teaser: "Its main job is to find rocks that might hold signs of ancient microbial life and to store them in sealed tubes.",
-    story: ["Perseverance landed on February 18, 2021, inside an ancient lake bed. Its main job is to find rocks that might hold signs of ancient microbial life and to store them in sealed tubes. Some tubes are left in a depot on the crater floor as a backup, waiting for a future mission to bring them to Earth. As of late August 2026, Perseverance had driven about 45 km."],
-    science: "In 2024, a rock called Cheyava Falls showed patterns that could be a possible sign of past life, or could be caused by chemistry alone. That question is still open. In September 2026, NASA also reported that rocks at Jezero's edge show at least three separate episodes of water, including hot groundwater.",
-    didYouKnow: "A student named it. Its instrument MOXIE also made oxygen from Mars' carbon-dioxide air, a step toward supporting future astronauts.", alt: "Perseverance rover exploring Jezero Crater"
+    teaser: "Perseverance gathers sealed samples, small pieces of Mars meant for a journey home.",
+    story: ["Perseverance landed inside an ancient lake bed on February 18, 2021. It searches for rocks that might preserve signs of ancient microbial life and seals selected samples in tubes. Some wait in a backup depot on the crater floor for a future mission to bring them to Earth. By late August 2026, the rover had driven about 45 km."],
+    science: "In 2024, patterns in a rock called Cheyava Falls raised a question: could they be signs of past life, or did chemistry alone make them? The answer is still open. In September 2026, NASA reported that rocks at Jezero's edge record at least three episodes of water, including hot groundwater.",
+    didYouKnow: "A student chose Perseverance's name. Its MOXIE instrument also made oxygen from Mars' carbon-dioxide air, a step toward supporting future astronauts.", alt: "Perseverance rover exploring Jezero Crater"
   }
 ];
 
 const questions = [
-  { question: "Which piece of Apollo hardware is still used by scientists today?", options: ["The Lunar Roving Vehicle", "The laser mirrors", "The flags", "The descent stage"], answer: 1, explanation: "The mirrors have no power and still bounce laser light back to Earth." },
-  { question: "Why did NASA leave the Apollo rovers on the Moon?", options: ["They were broken", "Astronauts forgot", "Bringing them back would cost too much fuel", "The Moon wanted them"], answer: 2, explanation: "Every extra kilogram carried back to Earth would need a lot more rocket to launch in the first place." },
-  { question: "What ended Opportunity's mission?", options: ["A crash", "A giant dust storm blocking sunlight", "It ran out of fuel", "Aliens"], answer: 1, explanation: "A huge dust storm covered Mars and blocked the sunlight that powered the rover." },
-  { question: "Which Mars spacecraft made the first powered flight on another planet?", options: ["Sojourner", "Phoenix", "Ingenuity", "InSight"], answer: 2, explanation: "Ingenuity made the first powered, controlled flight on another planet." },
-  { question: "How many flights did Ingenuity make?", options: ["5", "19", "42", "72"], answer: 3, explanation: "It flew 72 times in total." },
-  { question: "What did InSight's seismometer record?", options: ["Marsquakes", "Martian music", "Thunder", "Volcano eruptions"], answer: 0, explanation: "It recorded more than 1,300 marsquakes and even the impacts of falling meteoroids." },
-  { question: "Which of these rovers is still working today?", options: ["Spirit", "Opportunity", "Sojourner", "Curiosity"], answer: 3, explanation: "Curiosity keeps driving and drilling on Mars." },
-  { question: "What does \"crashed on purpose\" mean for a spacecraft?", options: ["It was an accident", "Mission planners guided it into the surface for science or safety", "It was stolen", "It got lost"], answer: 1, explanation: "Sometimes the last chapter is a planned crash for science or safety." }
+  { question: "Which piece of Apollo hardware still answers scientists today?", options: ["The Lunar Roving Vehicle", "The laser mirrors", "The flags", "The descent stage"], answer: 1, explanation: "With no power or moving parts, the mirrors still send laser light back to Earth." },
+  { question: "Why did the Apollo rovers stay on the Moon?", options: ["They were broken", "Astronauts forgot", "Bringing them back would cost too much fuel", "The Moon wanted them"], answer: 2, explanation: "Every kilogram on the return trip would have needed more rocket fuel to launch." },
+  { question: "What finally stopped Opportunity?", options: ["A crash", "A giant dust storm blocking sunlight", "It ran out of fuel", "Aliens"], answer: 1, explanation: "A huge dust storm covered Mars and blocked the sunlight that powered the rover." },
+  { question: "Which craft first made a powered flight on another planet?", options: ["Sojourner", "Phoenix", "Ingenuity", "InSight"], answer: 2, explanation: "Ingenuity lifted into the thin Martian air for the first powered, controlled flight on another planet." },
+  { question: "How many times did Ingenuity fly?", options: ["5", "19", "42", "72"], answer: 3, explanation: "Its planned five test flights became 72 flights over Jezero Crater." },
+  { question: "What did InSight listen for?", options: ["Marsquakes", "Martian music", "Thunder", "Volcano eruptions"], answer: 0, explanation: "Its seismometer recorded more than 1,300 marsquakes, along with impacts from falling meteoroids." },
+  { question: "Which rover is still exploring Mars?", options: ["Spirit", "Opportunity", "Sojourner", "Curiosity"], answer: 3, explanation: "Curiosity is still driving and drilling among the layers of Mount Sharp." },
+  { question: "What does \"crashed on purpose\" mean?", options: ["It was an accident", "Mission planners guided it into the surface for science or safety", "It was stolen", "It got lost"], answer: 1, explanation: "A planned impact can be a mission's final experiment, or a way to keep a world safe." }
 ];
 
 const glossary = [
-  ["Ascent stage", "The top part of the Apollo lander that carried astronauts back up from the Moon."],
-  ["Biosignature", "A sign that might have been made by living things, though it can sometimes have other causes."],
-  ["Crater", "A bowl-shaped hole made by an impact or a volcano."],
-  ["Descent stage", "The bottom part of a lander, with the legs and landing engine. It stays on the surface."],
-  ["Lander", "A spacecraft designed to touch down on another world."],
-  ["Marsquake", "A shaking of the ground on Mars, like an earthquake."],
-  ["Orbiter", "A spacecraft that circles a planet or moon."],
-  ["Regolith", "The loose dust and broken rock that covers the Moon's surface."],
-  ["Retroreflector", "A mirror that sends light straight back to where it came from."],
-  ["Rover", "A robot vehicle that drives across another world."],
-  ["Seismometer", "An instrument that senses ground shaking."],
-  ["Sol", "One Martian day, a little longer than an Earth day (about 24 hours and 40 minutes)."],
+  ["Ascent stage", "The upper half of the Apollo lander, carrying the astronauts back to lunar orbit."],
+  ["Biosignature", "A clue that could have been made by living things, though nature can sometimes make similar signs without life."],
+  ["Crater", "A bowl-shaped hollow, often carved by an impact or a volcano."],
+  ["Descent stage", "The lander's lower half: its legs, landing engine and the part left on the surface."],
+  ["Lander", "A spacecraft built to settle onto the surface of another world."],
+  ["Marsquake", "A tremor beneath Mars, like an earthquake beneath our feet."],
+  ["Orbiter", "A spacecraft that follows a path around a planet or moon."],
+  ["Regolith", "The loose dust and broken rock spread across the Moon's surface."],
+  ["Retroreflector", "A mirror that sends light back toward the place it came from."],
+  ["Rover", "A robot explorer with wheels, made to travel across another world."],
+  ["Seismometer", "An instrument that feels tiny movements and tremors in the ground."],
+  ["Sol", "One Martian day: about 24 hours and 40 minutes, a little longer than a day on Earth."],
   ["Sky crane", "A rocket-powered platform that lowers a rover to the ground on cables."]
 ];
 
 const faqs = [
-  ["Is all this stuff just space junk?", "Fair question. Each item was left on purpose and is a record of a real mission. Today, planners think carefully about what to leave behind and where. Some scientists and historians want to protect the oldest sites."],
-  ["Can I see the Apollo landing sites with a telescope?", "No. Even the largest telescopes on Earth cannot see objects that small. But orbiting spacecraft like LRO have taken close-up photos, and you can see them online."],
-  ["Are any of these machines still working?", "Yes: the Apollo laser mirrors, the rovers Curiosity and Perseverance, and the orbiter LRO (verify). The others have finished their missions."],
-  ["Will anyone go pick them up?", "Not at the moment. Some pieces may be studied or protected in the future."],
-  ["How long do signals take to reach Mars?", "Between about 3 and 22 minutes, depending on where Earth and Mars are in their orbits. That is why rovers have to make some decisions on their own."],
-  ["How do NASA rovers get their names?", "Many are named by students in NASA contests, including Curiosity, Ingenuity and Perseverance."],
-  ["Will people return to the Moon?", "Yes. Artemis II flew around the Moon in April 2026. NASA's plans for future landings are still being scheduled, so check NASA's Artemis page for the newest dates."]
+  ["Is all this stuff just space junk?", "It can look that way from far away, but each piece belongs to a mission story. These machines were left where they worked, and their data still teaches us. Scientists and historians also want the oldest sites treated with care."],
+  ["Can I see the Apollo landing sites with a telescope?", "Not from Earth: even the largest telescopes cannot resolve objects that small. But orbiters such as LRO have photographed the sites up close, and those images are online."],
+  ["Are any of these machines still working?", "Yes. The Apollo laser mirrors still return light, and Curiosity, Perseverance and the Lunar Reconnaissance Orbiter continue their work. The other machines here have finished their missions."],
+  ["Will anyone go pick them up?", "No collection mission is planned now. Some pieces may be studied or protected in the future; for the moment, they remain part of the worlds they explored."],
+  ["How long do signals take to reach Mars?", "About 3 to 22 minutes, depending on where Earth and Mars are in their orbits. By the time a reply arrives, a rover may need to make a few decisions on its own."],
+  ["How do NASA rovers get their names?", "Students have named many explorers through NASA contests, including Curiosity, Ingenuity and Perseverance."],
+  ["Will people return to the Moon?", "Artemis II flew around the Moon in April 2026. NASA's future landing plans are still being scheduled; its Artemis page carries the latest dates."]
 ];
 
 const timelineTrack = document.querySelector("#timeline-track");
@@ -198,7 +198,7 @@ function renderStory(story) {
         </div>
         <figure class="story-art" data-world="${story.world}"><img alt="${story.alt}" loading="lazy" decoding="async"><i aria-hidden="true"></i><figcaption>NASA IMAGE / LOADING</figcaption></figure>
       </summary>
-      <div class="story-detail"><h4>Story</h4>${paragraphs}<h4>Science it made possible</h4><p>${story.science}</p><h4>Did you know?</h4><p class="did-you-know">${story.didYouKnow}</p></div>
+      <div class="story-detail"><h4>The story</h4>${paragraphs}<h4>What it taught us</h4><p>${story.science}</p><h4>A small surprise</h4><p class="did-you-know">${story.didYouKnow}</p></div>
     </details>`;
 }
 
@@ -280,7 +280,7 @@ function renderQuestion() {
     <div class="quiz-head"><span>MISSION KNOWLEDGE / ${String(questionIndex + 1).padStart(2, "0")} OF ${questions.length}</span><span class="quiz-progress">SCORE ${score}</span></div>
     <p class="quiz-question">${current.question}</p>
     <div class="quiz-options">${current.options.map((option, index) => `<button class="quiz-option" type="button" data-answer="${index}">${String.fromCharCode(97 + index)}) ${option}</button>`).join("")}</div>
-    <div class="quiz-feedback" id="quiz-feedback">Choose your answer.</div>
+    <div class="quiz-feedback" id="quiz-feedback">The signal is yours.</div>
     <div class="quiz-controls"><button type="button" id="quiz-next" disabled>${questionIndex === questions.length - 1 ? "See score" : "Next question"} →</button></div>
   `;
 
@@ -311,10 +311,10 @@ function renderQuestion() {
 
 function renderResults() {
   const message = score <= 3
-    ? "Mission started! Read the stories and try again."
+    ? "Every expedition begins with a question. Wander the archive, then try again."
     : score <= 6
-      ? "Solid crew member. You know your way around the solar system."
-      : "Mission commander! You know your abandoned hardware.";
+      ? "A steady hand at mission control. You know your way around the solar system."
+      : "Mission commander! You know the stories these worlds keep.";
   quizConsole.innerHTML = `<div class="quiz-results"><p>MISSION SCORE</p><strong>${score} / ${questions.length}</strong><p>${message}</p><button type="button" id="quiz-restart">Run the quiz again</button></div>`;
   quizConsole.querySelector("#quiz-restart").addEventListener("click", () => {
     questionIndex = 0;
