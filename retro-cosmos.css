@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Silkscreen:wght@400;700&family=Syncopate:wght@700&display=swap");
+/* RETRO-COSMOS: visual layer loaded AFTER portfolio.css. Markup/IDs/JS untouched.
+   Disable everything: add ?motion=off to the URL or set prefers-reduced-motion. */
+:root{--black:#060616;--panel:#0c0c26;--silver:#e2e5ff;--muted:#9296c2;--line:#2a2c60;
+--green:#37e8ff;--green-soft:#3b8fb4;--magenta:#ff3ec9;--violet:#8a5cff;
+--glow:0 0 18px #37e8ff55,0 0 2px #37e8ff}
+body{background:radial-gradient(120% 80% at 50% -10%,#14123f 0%,#060616 60%)fixed,#060616}
+/* ---------- cosmic layers (injected by retro-cosmos.js) ---------- */
+.rc-layer{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none;contain:strict}
+.rc-nebula{position:absolute;inset:-20%;opacity:.55;animation:rc-drift 90s ease-in-out infinite alternate;
+background:radial-gradient(40% 35% at 25% 30%,#8a5cff55,transparent 70%),
+radial-gradient(35% 30% at 78% 22%,#ff3ec944,transparent 70%),
+radial-gradient(45% 40% at 60% 85%,#37e8ff33,transparent 70%)}
+.rc-planet{position:absolute;border-radius:50%;opacity:var(--o,0);will-change:transform,opacity;
+transform:translate3d(0,0,0)scale(var(--s,.6))}
+.rc-p1{top:14%;right:9%;width:min(34vw,380px);aspect-ratio:1;
+background:radial-gradient(circle at 32% 30%,#ffb3f0,#b13fd0 38%,#3a1a7a 72%,#120a33);
+box-shadow:0 0 60px #ff3ec955,inset -30px -20px 60px #05051a}
+.rc-p1::after{content:"";position:absolute;inset:-18% -45%;border:2px solid #37e8ff88;border-radius:50%;
+transform:rotateX(74deg)rotateZ(-14deg);box-shadow:0 0 22px #37e8ff66}
+.rc-p2{bottom:18%;left:6%;width:min(20vw,220px);aspect-ratio:1;
+background:radial-gradient(circle at 35% 30%,#bff6ff,#2aa5d6 40%,#14307a 75%,#070b25);
+box-shadow:0 0 50px #37e8ff55,inset -18px -12px 40px #04061a}
+.rc-grid{position:absolute;left:-50%;right:-50%;bottom:-8vh;height:46vh;opacity:.5;
+-webkit-mask-image:linear-gradient(to top,#000 5%,transparent 85%);mask-image:linear-gradient(to top,#000 5%,transparent 85%);
+transform:perspective(420px)rotateX(62deg);transform-origin:50% 100%}
+.rc-grid::before{content:"";position:absolute;inset:-48px 0 0;animation:rc-grid 4.5s linear infinite;
+background:linear-gradient(#ff3ec955 1px,transparent 1px)0 0/100% 48px,linear-gradient(90deg,#37e8ff55 1px,transparent 1px)0 0/48px 100%}
+.rc-shoot{position:absolute;width:140px;height:2px;border-radius:2px;opacity:0;
+background:linear-gradient(90deg,transparent,#fff,#37e8ff);transform:rotate(28deg);animation:rc-shoot 1.1s ease-out forwards}
+@keyframes rc-drift{to{transform:translate3d(-4%,3%,0)scale(1.08)}}
+@keyframes rc-grid{to{transform:translateY(48px)}}
+@keyframes rc-shoot{0%{opacity:0;translate:0 0}15%{opacity:1}100%{opacity:0;translate:-420px 230px}}
+/* ---------- neon UI treatment ---------- */
+h1,h2{text-shadow:0 0 28px #8a5cff66,1px 0 #ff3ec92e,-1px 0 #37e8ff2e}
+h1 em,h2 em,.eyebrow,.spark{text-shadow:var(--glow)}
+.site-header,.sidebar{background:#07071bcc;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+border-image:linear-gradient(90deg,transparent,#37e8ff77,#ff3ec977,transparent)1}
+.brand-mark{box-shadow:var(--glow),inset 0 0 12px #37e8ff22;border-color:var(--green)}
+.nav-link.active,.primary-nav a.active,.primary-nav [aria-current]{color:#fff;text-shadow:var(--glow);
+box-shadow:inset 2px 0 var(--green),0 8px 20px -14px #37e8ff}
+.button-primary{background:linear-gradient(100deg,#37e8ff,#8a5cff);border-color:transparent;color:#06061a;
+transition:transform .2s,box-shadow .25s}
+.button-primary:hover{transform:translateY(-2px);box-shadow:0 0 26px #37e8ff77,0 0 46px #ff3ec944}
+.button-primary:active{transform:translateY(0)scale(.98)}
+.button:not(.button-primary),.filter-button{border-color:#37e8ff66;transition:box-shadow .25s,border-color .25s,background .25s}
+.button:not(.button-primary):hover,.filter-button:hover,.filter-button.active{border-color:var(--magenta);
+box-shadow:0 0 16px #ff3ec955;background:#ff3ec912}
+.hero-window,.world-banner,.story-grid>*,.status-row,.ledger-row,.section-aside,.timeline-content{
+background:linear-gradient(160deg,#12123acc,#0a0a22b3);border:1px solid #37e8ff3a;
+box-shadow:0 0 0 1px #8a5cff14,0 12px 40px -18px #000,inset 0 0 30px #37e8ff0a;
+transition:transform .3s,border-color .3s,box-shadow .3s}
+.story-grid>*:hover,.status-row:hover,.ledger-row:hover,.timeline-content:hover{transform:translateY(-3px);
+border-color:#ff3ec988;box-shadow:0 0 24px #ff3ec933,0 18px 44px -18px #000,inset 0 0 34px #8a5cff14}
+.signal-dot,.live-dot{background:var(--green);box-shadow:0 0 12px var(--green);animation:rc-pulse 2.4s ease-in-out infinite}
+@keyframes rc-pulse{50%{opacity:.45;box-shadow:0 0 3px var(--green)}}
+.scanlines{opacity:.09;background-image:repeating-linear-gradient(to bottom,transparent 0 3px,#37e8ff1f 3px 4px)}
+.scanlines::after{content:"";position:absolute;inset:0 0 auto;height:18vh;opacity:.5;
+background:linear-gradient(transparent,#37e8ff14,transparent);animation:rc-scan 9s linear infinite}
+@keyframes rc-scan{from{transform:translateY(-20vh)}to{transform:translateY(110vh)}}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+outline:2px solid var(--magenta);outline-offset:3px;box-shadow:0 0 14px #ff3ec988}
+input,select,textarea{background:#0a0a24;border:1px solid #37e8ff55;color:var(--silver)}
+input:focus,select:focus,textarea:focus{border-color:var(--green);box-shadow:var(--glow)}
+::selection{background:#8a5cff;color:#fff}
+@media(max-width:700px){.rc-p2,.rc-grid{display:none}.rc-p1{width:52vw}}
+@media(prefers-reduced-motion:reduce){.rc-nebula,.rc-grid::before,.rc-shoot,.scanlines::after,.signal-dot,.live-dot{animation:none!important}
+.rc-shoot{display:none}.rc-planet{transition:none}}
+html[data-motion="off"] .rc-layer,html[data-motion="off"] .scanlines::after{display:none}
+
+/* ===== v2: NOTCHED PANELS + ARCADE/ELEGANT TYPOGRAPHY ===== */
+/* Text panels: two chamfered corners (top-left, bottom-right) and thin HUD brackets on the
+   other two. Brackets grow on hover (--l is animated via @property). */
+@property --l{syntax:"<length>";inherits:false;initial-value:14px}
+.world-banner,.story-grid>*,.status-row,.ledger-row,.section-aside,.timeline-content{
+--b:#37e8ffaa;--l:14px;border:0;box-shadow:none;
+clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px);
+background:
+linear-gradient(var(--b),var(--b))right top/var(--l) 1.5px no-repeat,
+linear-gradient(var(--b),var(--b))right top/1.5px var(--l) no-repeat,
+linear-gradient(var(--b),var(--b))left bottom/var(--l) 1.5px no-repeat,
+linear-gradient(var(--b),var(--b))left bottom/1.5px var(--l) no-repeat,
+linear-gradient(160deg,#12123acc,#0a0a22b3);
+transition:transform .3s,--l .3s}
+.story-grid>*:hover,.status-row:hover,.ledger-row:hover,.timeline-content:hover{
+--b:#ff3ec9;--l:26px;box-shadow:none;border:0}
+.brand-mark{clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px);box-shadow:none}
+
+/* Typography: wide geometric caps for h1, Michroma for h2/h3, pixel face for small labels,
+   italic serif kept for emphasis words. */
+:root{--display:"Michroma","Orbitron",sans-serif;--pixel:"Silkscreen","DM Mono",monospace}
+h1{font:700 clamp(26px,4.2vw,56px)/1.15 "Syncopate","Michroma",sans-serif;letter-spacing:.02em;text-transform:uppercase}
+h2{font:400 clamp(19px,2.3vw,32px)/1.25 var(--display);letter-spacing:.03em}
+h3{font-family:var(--display);letter-spacing:.04em}
+h1 em,h2 em{font-family:Georgia,"Times New Roman",serif;font-style:italic;text-transform:none;letter-spacing:0}
+.eyebrow,.section-index,.status-code,.world-code,.timeline-year,.nav-index,.window-top>span{
+font-family:var(--pixel);font-size:11px;letter-spacing:.12em}
